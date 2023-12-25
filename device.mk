@@ -27,3 +27,17 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/RMX3125/RMX3125-vendor.mk)
+
+# API
+PRODUCT_SHIPPING_API_LEVEL := 30
+
+
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_SUPER_PARTITION := false
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 720
+TARGET_BOOTANIM_LOW_RES := true
+
